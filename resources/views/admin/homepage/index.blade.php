@@ -5,9 +5,9 @@
     <div class="welcome-quote">
 
 	    <blockquote>
-		    {{ explode(" - ", $inspiration)[0] }}
+		    Home Page
 		    <cite>
-			    {{ explode(" - ", $inspiration)[1] }}
+			    Administrator
 		    </cite>
 	    </blockquote>
 

@@ -2,7 +2,7 @@
 
 return [
     'auth_global' => [
-        'email' => 'Your e-mail',
+        'user_id' => 'User Id',
         'password' => 'Password',
         'password_confirm' => 'Password confirmation',
     ],

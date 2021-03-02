@@ -32,14 +32,15 @@ class AdminUser extends Authenticatable implements CanActivateContract, HasMedia
     use HasMediaCollectionsTrait;
     use HasMediaThumbsTrait;
     use ProcessMediaTrait;
+    // use HasApiTokens;
 
     protected $fillable = [
         'email',
         'password',
         'first_name',
         'last_name',
+        'user_id',
         'activated',
-        'forbidden',
         'language',
         'last_login_at',
     ];

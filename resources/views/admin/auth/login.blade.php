@@ -20,13 +20,13 @@
 								</div>
 								<div class="auth-body">
 									@include('brackets/admin-auth::admin.auth.includes.messages')
-									<div class="form-group" :class="{'has-danger': errors.has('email'), 'has-success': fields.email && fields.email.valid }">
-										<label for="email">{{ trans('brackets/admin-auth::admin.auth_global.email') }}</label>
+									<div class="form-group" :class="{'has-danger': errors.has('user_id'), 'has-success': fields.user_id && fields.user_id.valid }">
+										<label for="user_id">{{ trans('brackets/admin-auth::admin.auth_global.user_id') }}</label>
 										<div class="input-group input-group--custom">
 											<div class="input-group-addon"><i class="input-icon input-icon--mail"></i></div>
-											<input type="text" v-model="form.email" v-validate="'required|email'" class="form-control" :class="{'form-control-danger': errors.has('email'), 'form-control-success': fields.email && fields.email.valid}" id="email" name="email" placeholder="{{ trans('brackets/admin-auth::admin.auth_global.email') }}">
+											<input type="text" v-model="form.user_id" v-validate="'required'" class="form-control" :class="{'form-control-danger': errors.has('user_id'), 'form-control-success': fields.user_id && fields.user_id.valid}" id="user_id" name="user_id" placeholder="{{ trans('brackets/admin-auth::admin.auth_global.user_id') }}">
 										</div>
-										<div v-if="errors.has('email')" class="form-control-feedback form-text" v-cloak>@{{ errors.first('email') }}</div>
+										<div v-if="errors.has('user_id')" class="form-control-feedback form-text" v-cloak>@{{ errors.first('user_id') }}</div>
 									</div>
 
 									<div class="form-group" :class="{'has-danger': errors.has('password'), 'has-success': fields.password && fields.password.valid }">
